@@ -1,5 +1,3 @@
-// profile.js — dApp profile page for Monad dApps Atlas
-
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('profile-root');
   if (!root) return;

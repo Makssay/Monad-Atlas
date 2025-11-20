@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dApp profile · Monad dApps Atlas</title>
+  <title>dApp profile · Monad Atlas</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page-profile">
+
+  <canvas id="galaxy-canvas"></canvas>
+
   <header class="topbar">
     <div class="topbar-inner shell">
       <div class="brand">
@@ -14,7 +17,7 @@
           <img src="icons/monad_logo.png" class="brand-logo" alt="Monad logo" />
         </div>
         <div class="brand-text">
-          <a class="brand-title brand-link" href="index.html">Monad dApps Atlas</a>
+          <a class="brand-title brand-link" href="index.html">Monad Atlas</a>
           <span class="brand-subtitle">dApp profile</span>
         </div>
       </div>
@@ -28,6 +31,9 @@
     </div>
   </main>
 
+  <script src="galaxy.js"></script>
+
   <script src="profile.js"></script>
+
 </body>
 </html>

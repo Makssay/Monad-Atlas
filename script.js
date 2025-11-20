@@ -1,12 +1,9 @@
-/* ============================================================
-   ORIGINAL PROJECT STATE
-============================================================ */
 
 const state = {
   allDapps: [],
   filtered: [],
-  categoryIndex: {}, // primary -> Set(secondary)
-  semanticVectors: [] // векторное представление dApps
+  categoryIndex: {}, 
+  semanticVectors: [] 
 };
 
 const dom = {};
@@ -18,9 +15,7 @@ const PROGRESSION_CONFIG = {
 
 const isAIPage = window.location.pathname.includes("ai.html");
 
-/* ============================================================
-   DOM READY
-============================================================ */
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const aiInput = document.getElementById("ai-input");
@@ -47,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(dapps => {
       state.allDapps = dapps || [];
 
-      // строим векторное представление dApps для AI
       buildSemanticVectors();
 
       if (!isAIPage) {
@@ -67,9 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-/* ============================================================
-   STATS
-============================================================ */
+
 
 function hydrateStats() {
   if (!dom.statDapps) return;
@@ -84,9 +76,7 @@ function hydrateStats() {
   dom.statCategories.textContent = set.size;
 }
 
-/* ============================================================
-   CATEGORY INDEX (primary + secondary)
-============================================================ */
+
 
 function buildCategoryIndex() {
   const index = {};
@@ -132,9 +122,7 @@ function resetSecondaryCategory() {
   dom.secondaryCategory.disabled = true;
 }
 
-/* ============================================================
-   EVENTS
-============================================================ */
+
 
 function attachEvents() {
   if (!dom.search) return;
@@ -172,9 +160,7 @@ function attachEvents() {
   dom.sort.addEventListener("change", applyFilters);
 }
 
-/* ============================================================
-   FILTER & SORT
-============================================================ */
+
 
 function applyFilters() {
   if (isAIPage) return;
@@ -211,22 +197,18 @@ function applyFilters() {
   renderGrid();
 }
 
-/* ============================================================
-   VECTOR SEMANTIC AI SEARCH (VARIANT A)
-============================================================ */
 
-/* --- Векторные измерения доменов --- */
 const SEM_DIMENSIONS = [
-  "meme",       // мемы / memecoins
-  "trading",    // DEX / AMM / трейдинг
-  "crosschain", // cross-chain / bridge / interoperability
-  "ai",         // AI / агентовые протоколы
-  "gaming",     // игры
-  "nft",        // NFT / коллекции / маркетплейсы
-  "infra",      // инфраструктура / протоколы
-  "tooling",    // dev-инструменты
-  "lending",    // лэндинг / займы
-  "payments"    // платежи / onramp / off-ramp
+  "meme",       
+  "trading",    
+  "crosschain", 
+  "ai",         
+  "gaming",     
+  "nft",        
+  "infra",      
+  "tooling",    
+  "lending",    
+  "payments"    
 ];
 
 const SEM_INDEX = {};
@@ -234,7 +216,6 @@ SEM_DIMENSIONS.forEach((k, i) => {
   SEM_INDEX[k] = i;
 });
 
-/* --- Ключевые словари по доменам --- */
 const DOMAIN_KEYWORDS = {
   meme: [
     "memecoin", "memecoins", "meme coin", "meme coins",
@@ -281,7 +262,6 @@ const DOMAIN_KEYWORDS = {
   ]
 };
 
-/* --- Строим вектор для каждого dApp --- */
 function buildSemanticVectors() {
   const vectors = [];
 
@@ -291,7 +271,7 @@ function buildSemanticVectors() {
     const textRaw = `${dapp.name || ""} ${(dapp.description || "")}`;
     const text = textRaw.toLowerCase().replace(/-/g, " ");
 
-    // 1) по ключевым словам в описании
+
     SEM_DIMENSIONS.forEach(dim => {
       const idx = SEM_INDEX[dim];
       const words = DOMAIN_KEYWORDS[dim] || [];
@@ -303,7 +283,6 @@ function buildSemanticVectors() {
       });
     });
 
-    // 2) по категориям
     (dapp.categories || []).forEach(cat => {
       if (!cat) return;
       const parts = String(cat).split("::");
@@ -345,7 +324,6 @@ function buildSemanticVectors() {
       }
     });
 
-    // 3) спец-кейсы для мемов / launchpad
     if (text.includes("memecoin") || text.includes("memecoins")) {
       vec[SEM_INDEX.meme] += 6;
       vec[SEM_INDEX.trading] += 3;
@@ -366,12 +344,10 @@ function buildSemanticVectors() {
   state.semanticVectors = vectors;
 }
 
-/* --- строим вектор запроса --- */
 function buildQueryVector(query) {
   const vec = new Array(SEM_DIMENSIONS.length).fill(0);
   const q = query.toLowerCase().replace(/-/g, " ");
 
-  // ключевые слова по доменам
   SEM_DIMENSIONS.forEach(dim => {
     const idx = SEM_INDEX[dim];
     const words = DOMAIN_KEYWORDS[dim] || [];
@@ -382,7 +358,6 @@ function buildQueryVector(query) {
     });
   });
 
-  // более общие паттерны
   if (/memecoin|memecoins|shitcoin|shitcoins|meme/.test(q)) {
     vec[SEM_INDEX.meme] += 4;
     vec[SEM_INDEX.trading] += 1.5;
@@ -416,7 +391,6 @@ function buildQueryVector(query) {
     vec[SEM_INDEX.payments] += 3;
   }
 
-  // синергия "мемы + трейдинг"
   if (vec[SEM_INDEX.meme] > 0 && vec[SEM_INDEX.trading] > 0) {
     vec[SEM_INDEX.meme] *= 1.4;
     vec[SEM_INDEX.trading] *= 1.3;
@@ -425,7 +399,6 @@ function buildQueryVector(query) {
   return normalizeVector(vec);
 }
 
-/* --- косинусное сходство --- */
 function cosineSimilarity(a, b) {
   let sum = 0;
   for (let i = 0; i < a.length; i++) {
@@ -434,7 +407,6 @@ function cosineSimilarity(a, b) {
   return sum;
 }
 
-/* --- вспомогательный подсчёт совпадений --- */
 function countOccurrences(text, needle) {
   if (!needle) return 0;
   let count = 0;
@@ -446,20 +418,17 @@ function countOccurrences(text, needle) {
   return count;
 }
 
-/* --- нормализация вектора --- */
 function normalizeVector(vec) {
   const norm = Math.sqrt(vec.reduce((s, v) => s + v * v, 0));
   if (!norm) return vec.map(() => 0);
   return vec.map(v => v / norm);
 }
 
-/* --- доп. лексический буст для специфичных кейсов --- */
 function lexicalBoost(dapp, queryLower) {
   let score = 0;
   const desc = (dapp.description || "").toLowerCase();
   const name = (dapp.name || "").toLowerCase();
 
-  // прямое включение всей фразы
   if (desc.includes(queryLower) || name.includes(queryLower)) {
     score += 15;
   }
@@ -496,23 +465,20 @@ function hasTradingCategory(dapp) {
   });
 }
 
-/* --- superScore(dapp): автоматический супер-вес протокола --- */
 function computeSuperScore(dapp) {
   let s = 0;
 
-  // 1) Кол-во адресов
+
   const addrCount = dapp.addresses ? Object.keys(dapp.addresses).length : 0;
   if (addrCount >= 10) s += 20;
   else if (addrCount >= 5) s += 12;
   else if (addrCount >= 2) s += 5;
 
-  // 2) Длина описания
   const descLen = (dapp.description || "").length;
   if (descLen > 400) s += 12;
   else if (descLen > 250) s += 8;
   else if (descLen > 140) s += 4;
 
-  // 3) Категории высокого уровня
   (dapp.categories || []).forEach(cat => {
     const c = (cat || "").toLowerCase();
     if (/infra::interoperability|infra::messaging|infra::bridge|infra::bridging/.test(c)) {
@@ -547,7 +513,6 @@ function computeSuperScore(dapp) {
   return s;
 }
 
-/* --- запуск AI-поиска (Live-only + Variant A) --- */
 function runAISearch() {
   const input = document.getElementById("ai-input");
   const box = document.getElementById("ai-results");
@@ -581,50 +546,75 @@ function runAISearch() {
       const lexScore = lexicalBoost(dapp, qLower);
       const superScore = computeSuperScore(dapp);
 
-      // Variant A: balanced
       score += lexScore;
       score += superScore * 2.2;
 
       return { dapp, score };
     })
-    .filter(r => r.dapp.live && r.score > 0) // ← только live
+    .filter(r => r.dapp.live && r.score > 0) 
     .sort((a, b) => b.score - a.score);
 
   renderAIResults(results);
 }
 
-/* --- рендер AI-результатов --- */
 function renderAIResults(list) {
   const container = document.getElementById("ai-results");
   if (!container) return;
 
   container.innerHTML = "";
+  container.classList.add("ai-grid");
 
-  if (list.length === 0) {
+  if (!list.length) {
     container.innerHTML = `<p style="opacity:0.6">No results found</p>`;
     return;
   }
 
-  list.forEach(({ dapp, score }) => {
+  const limited = list.slice(0, 12);
+
+  limited.forEach(({ dapp, score }, index) => {
     const card = document.createElement("div");
-    card.className = "ai-result-card";
+    card.className = "card";
+
+    card.style.animationDelay = `${index * 80}ms`;
+
     card.innerHTML = `
-      <h3>${escapeHtml(dapp.name)}</h3>
-      <p>${escapeHtml(dapp.description || "")}</p>
-      <div style="margin-top:8px;opacity:0.6;font-size:0.8rem">
-        Score: ${score.toFixed(1)}
+      <div class="card-logo">
+        <img src="${escapeHtml(dapp.pfp || "icons/monad_logo.png")}" />
+      </div>
+      <div class="card-info">
+        <h3>${escapeHtml(dapp.name)}</h3>
+        <p>${escapeHtml(dapp.description || "")}</p>
+        <div class="card-tags">
+          ${(dapp.categories || [])
+            .map(c => `<span>${escapeHtml(c)}</span>`)
+            .join("")}
+        </div>
+        <div class="card-status ${dapp.live ? "live" : "inactive"}">
+          ${dapp.live ? "Live" : "Not live"}
+        </div>
+        <button class="card-open">View profile</button>
       </div>
     `;
+
+    const btn = card.querySelector(".card-open");
+    if (btn) {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        markDappVisited(dapp.name);
+        window.location.href = `profile.html?name=${encodeURIComponent(dapp.name)}`;
+      });
+    }
+
     card.addEventListener("click", () => {
+      markDappVisited(dapp.name);
       window.location.href = `profile.html?name=${encodeURIComponent(dapp.name)}`;
     });
+
     container.appendChild(card);
   });
 }
 
-/* ============================================================
-   CATEGORY MATCH
-============================================================ */
+
 
 function dappMatchesCategory(dapp, primary, secondary) {
   const cats = dapp.categories || [];
@@ -639,9 +629,7 @@ function dappMatchesCategory(dapp, primary, secondary) {
   });
 }
 
-/* ============================================================
-   RENDER GRID
-============================================================ */
+
 
 function renderGrid() {
   if (!dom.grid) return;
@@ -686,9 +674,6 @@ function renderGrid() {
   });
 }
 
-/* ============================================================
-   PROGRESSION SYSTEM
-============================================================ */
 
 function markDappVisited(name) {
   let visited = JSON.parse(localStorage.getItem("monadAtlasVisited") || "[]");
@@ -700,40 +685,10 @@ function markDappVisited(name) {
   }
 }
 
-function computeLevel(count) {
-  let lvl = 1;
-  let need = PROGRESSION_CONFIG.base;
-  let rest = count;
 
-  while (rest >= need) {
-    rest -= need;
-    lvl++;
-    need = Math.round(need * PROGRESSION_CONFIG.growth);
-  }
 
-  return {
-    level: lvl,
-    progress: rest,
-    nextLevelAt: need
-  };
-}
 
-function updateXP(count) {
-  const hud = document.getElementById("xp-hud");
-  if (!hud) return;
 
-  const info = computeLevel(count);
-
-  hud.querySelector(".xp-level").textContent = `Lv. ${info.level}`;
-  hud.querySelector(".xp-count").textContent = `${count} dApps explored`;
-
-  const pct = Math.round((info.progress / info.nextLevelAt) * 100);
-  hud.querySelector(".xp-bar").style.width = pct + "%";
-}
-
-/* ============================================================
-   UTILS
-============================================================ */
 
 function escapeHtml(str) {
   return String(str)

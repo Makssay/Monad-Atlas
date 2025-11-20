@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monad dApps Atlas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="icons/monad_logo.png" class="brand-logo" alt="Monad logo" />
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">Monad dApps Atlas</span>
+        <span class="brand-subtitle">Discover live experiences on Monad</span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Squad up with the Monad ecosystem</h1>
+      <p>
+        Explore DeFi, gaming, infra and more in one immersive discovery layer.
+        Filter by category, status and vibe — then dive into each dApp’s profile.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number" id="stat-dapps-count">0</div>
+          <div class="stat-label">dApps indexed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="stat-live-count">0</div>
+          <div class="stat-label">live on Monad</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="stat-categories-count">0</div>
+          <div class="stat-label">categories</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI SEARCH BUTTON (новая вставка) -->
+    <div class="hero-ai-button">
+      <a href="ai.html" class="ai-search-button">
+        🔮 AI Search
+      </a>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="controls">
+
+    <div class="select-wrapper">
+      <input type="text" id="search-input" placeholder="Search dApps..." />
+    </div>
+
+    <div class="select-wrapper">
+      <select id="primary-category-filter">
+        <option value="all">All categories</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      <select id="secondary-category-filter" disabled>
+        <option value="all">All subcategories</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      <select id="status-filter">
+        <option value="all">All statuses</option>
+        <option value="live">Live</option>
+        <option value="inactive">Not live</option>
+      </select>
+    </div>
+
+    <div class="select-wrapper">
+      <select id="sort-select">
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+        <option value="live">Live first</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="grid" id="dapp-grid"></section>
+
+  <div id="empty-state" class="empty hidden">
+    No dApps match your filters.
+  </div>
+
+  <script src="galaxy.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

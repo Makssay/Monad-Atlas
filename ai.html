@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Search — Monad dApps Atlas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="icons/monad_logo.png" class="brand-logo" />
+      </div>
+      <div class="brand-text">
+        <a href="index.html" class="brand-title">Monad dApps Atlas</a>
+        <span class="brand-subtitle">AI-powered discovery</span>
+      </div>
+    </div>
+
+    <nav class="top-nav">
+      <a href="index.html" class="top-nav-link">Dapps</a>
+      <a href="ai.html" class="top-nav-link active">AI Search</a>
+    </nav>
+  </header>
+
+  <!-- AI PAGE -->
+  <main class="ai-shell">
+
+    <section class="ai-hero">
+      <h1>🔮 AI Search</h1>
+      <p>
+        Find the most relevant dApps by meaning — powered by local semantic ranking.
+      </p>
+    </section>
+
+    <section class="ai-search">
+      <div class="ai-row">
+        <input id="ai-input" type="text" 
+          placeholder="Ask AI... e.g. 'gaming ai agents memory'" />
+        <button id="ai-search-btn">Search</button>
+      </div>
+
+      <div id="ai-results"></div>
+    </section>
+
+  </main>
+
+  <script src="galaxy.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

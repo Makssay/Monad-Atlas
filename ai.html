@@ -30,25 +30,35 @@
 
     <section class="ai-hero">
       <h1>AI Search</h1>
-      <p>
-        Find the most relevant dApps apps by meaning
-      </p>
+      <p>Find the most relevant dApps by meaning</p>
     </section>
 
     <section class="ai-search">
       <div class="ai-row">
-        <input id="ai-input" type="text" 
-          placeholder="Ask AI... " />
+        <input id="ai-input" type="text" placeholder="Ask AI..." />
         <button id="ai-search-btn">Search</button>
       </div>
 
       <div id="ai-results" class="ai-grid"></div>
-
     </section>
 
   </main>
 
   <script src="galaxy.js"></script>
+
+  <!-- REAL AI ENGINE – MUST BE LOADED AS ESM MODULE -->
+  <script type="module">
+    import { pipeline } from "https://cdn.jsdelivr.net/npm/@xenova/transformers";
+
+    window.transformers = {
+      pipeline,
+      loaded: true,
+    };
+
+    console.log("Transformers.js ESM loaded correctly");
+  </script>
+
   <script src="script.js"></script>
+
 </body>
 </html>

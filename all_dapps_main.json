@@ -279,6 +279,24 @@
     "pfp": null
   },
   {
+    "name": "Cashmere",
+    "description": "Autonomous Monetary Infrastructure for stablecoins — a unified layer that powers zero-slippage omnichain transfers, yield agent, on/off ramps, privacy transfers directly on https://app.cashmere.exchange.",
+    "live": true,
+    "categories": [
+      "DeFi::Cross Chain"
+    ],
+    "addresses": {
+      "CashmereCCTP": "0xD156fFB54871F4562744d6Be5d6321B5BffCa3B6"
+    },
+    "links": {
+      "project": "https://cashmere.exchange",
+      "twitter": "https://x.com/cashmerelabs",
+      "github": "https://github.com/cashmere-prod",
+      "docs": "https://docs.cashmere.exchange/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/220541151?v=4"
+  },
+  {
     "name": "Chainlink",
     "description": "Chainlink is the standard for onchain finance, verifiable data, and cross-chain interoperability. Learn more by visiting chain.link.",
     "live": true,
@@ -682,7 +700,35 @@
       "docs": "https://docs.definitive.fi/",
       "discord": "https://discord.com/invite/definitive"
     },
-    "pfp": "https://docs.definitive.fi/~gitbook/image?url=https%3A%2F%2F882080321-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FoQ8TuvNOFfEa103XBfun%252Fsites%252Fsite_YSmBI%252Ficon%252FkUBZIkm05fXjTutUepTO%252FDefinitive%2520Triangle%252040%2520x%252040.png%3Falt%3Dmedia%26token%3Dac5f885b-d192-44b0-b70c-5f2936777fb9&width=48&height=48&sign=768dfc6f&sv=2"
+    "pfp": null
+  },
+  {
+    "name": "Dexalot",
+    "description": "Dexalot is a decentralized exchange (DEX) for spot trading, powered by a fully on-chain central limit order book (CLOB).  Competitive prices, zero to minimal slippage and no fees.",
+    "live": true,
+    "categories": [
+      "DeFi::DEX",
+      "DeFi::Cross Chain",
+      "DeFi::Trading Interfaces"
+    ],
+    "addresses": {
+      "Portfolio": "0x1FD108cf42A59c635bD4703b8DbC8a741ff834Be",
+      "Exchange": "0xC725229Aefeab5fAec9cc1667d79D9478e564a0C",
+      "DexalotRouter": "0x3D3E4F0523500f95039D0Fe600ACf2ADE4b06eB9",
+      "MainnetRFQ": "0xA0421a4DB5bb7577f9bb9B577b5F600a642368be",
+      "PortfolioBridge": "0x246c87368580acd6E9ca46Bf112aD91978389634",
+      "LzV2App": "0x170c15cb9887E6Adb097518104B174Df212bB190",
+      "BannedAccounts": "0xa5C079C1986E2335d83fA2d7282e162958e515D5",
+      "Create3Factory": "0x06B82468100A3A7b0EAC77289f0D1ab920573B16",
+      "ProxyAdmin": "0x15764530c716cEFaD9Cbd2310D722704D03de875"
+    },
+    "links": {
+      "project": "https://app.dexalot.com/",
+      "twitter": "https://x.com/dexalot",
+      "github": "https://github.com/dexalot",
+      "docs": "https://docs.dexalot.com/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/84807557?v=4"
   },
   {
     "name": "Dirol",
@@ -884,7 +930,7 @@
       "github": "https://github.com/hyperlane-xyz",
       "docs": "https://docs.hyperlane.xyz/"
     },
-    "pfp": "https://cdn.prod.website-files.com/6686ac1afeef42fcf1929457/68b9c205f48bca83e29fe8c5_HYP_Favicon_32.png"
+    "pfp": "https://avatars.githubusercontent.com/u/95944593?v=4"
   },
   {
     "name": "KINETK",
@@ -906,7 +952,7 @@
       "substack": "https://kinetk.substack.com/",
       "discord": "https://discord.gg/5FWGX6JX"
     },
-    "pfp": "https://cdn.prod.website-files.com/68640760fa8fa3731cc2eda4/6871177cc04f67a4272c6715_favicon-32x32.png"
+    "pfp": "https://avatars.githubusercontent.com/u/115229396?v=4"
   },
   {
     "name": "Kinic AI Memory Agent",
@@ -924,7 +970,7 @@
       "github": "https://github.com/hshadab/kinic-monad-poc",
       "docs": "https://github.com/hshadab/kinic-monad-poc/blob/master/README.md"
     },
-    "pfp": "https://kinicmemory.com/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/8843481?v=4"
   },
   {
     "name": "Kintsu",
@@ -948,7 +994,7 @@
       "discord": "https://discord.gg/kintsu",
       "linkedin": "https://www.linkedin.com/company/kintsu-xyz"
     },
-    "pfp": "https://kintsu.xyz/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/136823497?v=4"
   },
   {
     "name": "Kodeus",
@@ -965,7 +1011,7 @@
       "twitter": "https://x.com/thekodeuslabs",
       "github": "https://github.com/KodeusAI"
     },
-    "pfp": "https://kodeus.ai/favicon.svg"
+    "pfp": "https://avatars.githubusercontent.com/u/235836143?v=4"
   },
   {
     "name": "Kuru",
@@ -992,7 +1038,7 @@
       "twitter": "https://x.com/KuruExchange",
       "github": "https://github.com/Kuru-Labs"
     },
-    "pfp": "https://kuru.io/favicon-96x96.png"
+    "pfp": "https://avatars.githubusercontent.com/u/155569584?v=4"
   },
   {
     "name": "KyberSwap",
@@ -1016,7 +1062,7 @@
       "github": "https://github.com/KyberNetwork",
       "docs": "https://docs.kyberswap.com/"
     },
-    "pfp": "https://kyberswap.com/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/28812853?v=4"
   },
   {
     "name": "LFJ",
@@ -1050,7 +1096,7 @@
       "github": "https://github.com/lfj-gg/",
       "docs": "https://docs.lfj.gg/"
     },
-    "pfp": "https://lfj.gg/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/82165905?v=4"
   },
   {
     "name": "LayerZero",
@@ -1126,7 +1172,7 @@
       "github": "https://github.com/layerzero-labs",
       "docs": "https://docs.layerzero.network"
     },
-    "pfp": "https://layerzero.network/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/90789833?v=4"
   },
   {
     "name": "LeverUp",
@@ -1150,7 +1196,7 @@
       "github": "https://github.com/leverup-xyz",
       "docs": "https://leverup.gitbook.io/docs/"
     },
-    "pfp": "https://framerusercontent.com/images/ktIbGiD345lS520gNeSM3qikU.png"
+    "pfp": "https://avatars.githubusercontent.com/u/230526227?v=4"
   },
   {
     "name": "Levr Bet",
@@ -1168,7 +1214,7 @@
       "twitter": "https://x.com/Levr_Bet",
       "github": "https://github.com/LEVR-LABS"
     },
-    "pfp": "https://cdn.prod.website-files.com/65081f5d020d0150e714aa28/652ff2bb81fa577fdd041077_Levr%20fav.png"
+    "pfp": "https://avatars.githubusercontent.com/u/168791709?v=4"
   },
   {
     "name": "Li.Fi",
@@ -1185,7 +1231,7 @@
       "github": "https://github.com/lifinance",
       "docs": "https://docs.li.fi/"
     },
-    "pfp": "https://li.fi/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/85288935?v=4"
   },
   {
     "name": "LootGO",
@@ -1222,7 +1268,7 @@
       "github": "https://github.com/LumiterraGame",
       "docs": "https://lumiterra.notion.site/Lumiterra-Multiverse-241211cc5a888022ac5aca4a04064a80"
     },
-    "pfp": "https://framerusercontent.com/images/OxIsiNYbiEwTK61VcD7nuzDRAg0.png"
+    "pfp": "https://avatars.githubusercontent.com/u/192854206?v=4"
   },
   {
     "name": "Madhouse",
@@ -1240,7 +1286,7 @@
       "github": "https://github.com/usemadhouse",
       "docs": "https://docs.madhouse.ag/"
     },
-    "pfp": "https://madhouse.ag/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/218230279?v=4"
   },
   {
     "name": "Matcha",
@@ -1267,7 +1313,7 @@
       "github": "https://github.com/0xProject",
       "docs": "https://help.matcha.xyz/"
     },
-    "pfp": null
+    "pfp": "https://avatars.githubusercontent.com/u/24832717?v=4"
   },
   {
     "name": "Matcha Meta",
@@ -1292,7 +1338,7 @@
       "github": "https://github.com/0xProject",
       "docs": "https://0x-docs.gitbook.io/matcha-meta/"
     },
-    "pfp": "https://0x-docs.gitbook.io/matcha-meta/~gitbook/image?url=https%3A%2F%2F196951178-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FXlY7sNe5HmYQ959p1DCD%252Fsites%252Fsite_Gwour%252Ficon%252FeQy3Nb2YNwAyF43AWXLC%252FVector.png%3Falt%3Dmedia%26token%3D845f8ce0-48fc-4ee1-8b58-e5029ea7a7ba&width=48&height=48&sign=e9ef39a4&sv=2"
+    "pfp": "https://avatars.githubusercontent.com/u/24832717?v=4"
   },
   {
     "name": "Mona Trading Bot",
@@ -1334,7 +1380,7 @@
       "github": "https://github.com/SynFutures",
       "docs": "https://docs.monday.trade/"
     },
-    "pfp": "https://cdn.prod.website-files.com/69039232feaf520941914ead/690a3f9b970a6321cd5d3f27_favicon.png"
+    "pfp": "https://avatars.githubusercontent.com/u/72651144?v=4"
   },
   {
     "name": "Monorail",
@@ -1353,7 +1399,7 @@
       "github": "https://github.com/monorail-xyz",
       "docs": "https://docs.monorail.xyz"
     },
-    "pfp": "https://docs.monorail.xyzassets/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/184506105?v=4"
   },
   {
     "name": "Mu Protocol",
@@ -1396,7 +1442,7 @@
       "discord": "https://discord.com/invite/MuDigital",
       "telegram": "https://t.me/MuDigitalHQ/6"
     },
-    "pfp": "https://mudigital.net/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/179521270?v=4"
   },
   {
     "name": "Nad.fun",
@@ -1457,7 +1503,7 @@
       "github": "https://github.com/Narwhal-Finance",
       "docs": "https://narwhal-finance.gitbook.io/nar.bet/"
     },
-    "pfp": "https://narwhal-finance.gitbook.io/nar.bet/~gitbook/icon?size=small&theme=light"
+    "pfp": "https://avatars.githubusercontent.com/u/119855435?v=4"
   },
   {
     "name": "Narwhal Finance",
@@ -1478,7 +1524,7 @@
       "github": "https://github.com/Narwhal-Finance",
       "docs": "https://docs.narwhal.finance/"
     },
-    "pfp": "https://narwhal.finance/favicon/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/119855435?v=4"
   },
   {
     "name": "Neverland",
@@ -1549,7 +1595,7 @@
       "github": "https://github.com/Neverland-Money",
       "docs": "https://docs.neverland.money"
     },
-    "pfp": "https://neverland.money/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/212163943?v=4"
   },
   {
     "name": "OctoSwap",
@@ -1574,7 +1620,7 @@
       "github": "https://github.com/octoswapdex/",
       "docs": "https://docs.octo.exchange/"
     },
-    "pfp": "https://octo.exchangeassets/img/logo/logo.png"
+    "pfp": "https://avatars.githubusercontent.com/u/243698138?v=4"
   },
   {
     "name": "OrbiterFinance",
@@ -1593,7 +1639,7 @@
       "github": "https://github.com/Orbiter-Finance",
       "docs": "https://docs.orbiter.finance"
     },
-    "pfp": "https://orbiter.finance/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/102346948?v=4"
   },
   {
     "name": "Orochi",
@@ -1611,7 +1657,7 @@
       "github": "https://github.com/orochi-network",
       "docs": "https://docs.orochi.network/"
     },
-    "pfp": "https://orochi.network/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/94106298?v=4"
   },
   {
     "name": "PancakeSwap",
@@ -1622,7 +1668,7 @@
     ],
     "addresses": {
       "PancakeV2Factory": "0x02a84c1b3BBD7401a5f7fa98a384EBC70bB5749E",
-      "PancakeV2Router": "0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb",
+      "PancakeV2Router": "0xB1Bc24c34e88f7D43D5923034E3a14B24DaACfF9",
       "PancakeV3PoolDeployer": "0x41ff9AA7e16B8B1a8a8dc4f0eFacd93D02d071c9",
       "PancakeV3Factory": "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865",
       "SwapRouter": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
@@ -1633,10 +1679,10 @@
       "V3Migrator": "0xbC203d7f83677c7ed3F7acEc959963E7F4ECC5C2",
       "TickLens": "0x9a489505a00cE272eAa5e07Dba6491314CaE3796",
       "QuoterV2_periphery": "0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997",
-      "SmartRouter": "0x13f4EA83D0bd40E75C8222255bc855a974568Dd4",
-      "MixedRouteQuoterV1": "0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86",
+      "SmartRouter": "0x21114915Ac6d5A2e156931e20B20b038dEd0Be7C",
+      "MixedRouteQuoterV1": "0x77b482D9A4E391d682C857C630B8d869FdeE5c44",
       "QuoterV2_smartRouter": "0x4c650FB471fe4e0f476fD3437C3411B1122c4e3B",
-      "TokenValidator": "0x864ED564875BdDD6F421e226494a0E7c071C06f8"
+      "TokenValidator": "0xfcB76dfDf9c79AE5d334C0E1901449c8A893DF22"
     },
     "initCodeHashes": {
       "v2InitCodeHash": "0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d",
@@ -1648,7 +1694,30 @@
       "github": "https://github.com/pancakeswap/",
       "docs": "https://developer.pancakeswap.finance/"
     },
-    "pfp": "https://pancakeswap.finance/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/71247426?v=4"
+  },
+  {
+    "name": "Peridot",
+    "description": "Peridot allows users to earn interest on your crypto and borrow funds without selling, all with smart, fair rates across multiple blockchains.",
+    "live": true,
+    "categories": [
+      "DeFi::Lending"
+    ],
+    "addresses": {
+      "$P": "0x96650BebC549456F253974c11Fc6cBE28172A2d2",
+      "SimpleOracle": "0x42D5B37CD3682eDD0a3dBb242C579bDCB108f47C",
+      "PeridottrollerG7Implementation": "0x81C0533c8132Bc20c3A53f599925AB01c7dA2B3A",
+      "PeridottrollerG7Proxy": "0x6D208789f0a978aF789A3C8Ba515749598940716",
+      "JumpRateModelV2": "0x1FB287E1c4F7B4c6b511f4d190523814593Ad84e"
+    },
+    "links": {
+      "project": "https://peridot.finance",
+      "twitter": "https://x.com/peridotprotocol",
+      "github": "https://github.com/PeridotFinance",
+      "telegram": "https://t.me/peridotlabs",
+      "docs": "https://peridot-finance.gitbook.io/peridot-protocol"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/164892043?v=4"
   },
   {
     "name": "PingMe",
@@ -1668,7 +1737,51 @@
       "github": "https://github.com/pingme",
       "docs": "https://www.pingme.xyz"
     },
-    "pfp": "https://www.pingme.xyz/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/3476660?v=4"
+  },
+  {
+    "name": "Pingu Exchange",
+    "description": "A perps protocol for trading crypto and real-world assets with leverage.",
+    "live": true,
+    "categories": [
+      "DeFi::Perpetuals / Derivatives"
+    ],
+    "addresses": {
+      "PythUpdater": "0x605AD21A6A9328d74fA88AA80F23dbD4e746b2fD",
+      "RoleStore": "0x4F6e71a81a72Fbd33C599596A7E3e28Aa4b44Ebb",
+      "DataStore": "0x631c6E0d5ae2E1F6a39871a9BE97F1D9d43D1C83",
+      "AssetStore": "0x379A14208c15e99177b6A2003B77F38f80D66a2f",
+      "FundingStore": "0xE0FfD61De51Ce62D47845c5e6F10c35e8807224d",
+      "FundStore": "0x576d51fB872065DC4Af6f83902fd4078eBCc2f03",
+      "MarketStore": "0xe5CdF1b3b36b9799B33E5C6f8C4c8B03848C6470",
+      "OrderStore": "0xDD9Bb855fcD8bc3F45b54B9C1F9dE43Dd2DFf06B",
+      "PoolStore": "0xCB30DFf8515d4170BBf1fd0Ff01CB21F9ACc4caF",
+      "PositionStore": "0x06FC8B836F78A2C95416d33028452f9C95AAc6b4",
+      "RiskStore": "0x66700b04bD1a912996fdB90f05c1B0965Fef1b62",
+      "BuyBackStore": "0x1B313E19Df0B33880e99f38AC58e6BbdCC5B1810",
+      "StakingStore": "0xD849497f08180d3f1a79397EF8ae4DBD05EC1a5c",
+      "Funding": "0xD7071C24f765Ca1ad21FF8E9d89ad45845Af64DF",
+      "Orders": "0xeE6A587C06e02f330C00EA3E7c102d9b1d8a52f3",
+      "Pool": "0xb1744C2e2B9b34630551338568698368489AEB7f",
+      "Positions": "0x3d7ec93875B6a6f0A5102fE29f887ee6E751b12F",
+      "Processor": "0x75F2948bfF7D6D6bb6133cc5FE3c710656c2A939",
+      "BuyBack": "0xBfC60682970fd08E2e4eEa96f8B7b6BFa25EAb53",
+      "Staking": "0xD53b51aE4216B80422216269Edf064E9DE89749b",
+      "ReferralStore": "0xCf410B10C0f30948033e47b7209CC026054E9F18",
+      "RebateStore": "0xe199e871fC628488d6cd1b2d192Ed51Dc8f5b88F",
+      "Referral": "0xDfD770c6ca5F690289Ddf6a173025719C07996c4",
+      "Rebate": "0x15E5E522a44B562f3c87da77c87eC858F62d221E",
+      "Swapper": "0x133f72734a185ff821705af80D57B8823CA8bC8e",
+      "Signable": "0x99903470cc631D01F271340C94E224262168ED95",
+      "PINGU": "0xA2426cD97583939E79Cfc12aC6E9121e37D0904d"
+    },
+    "links": {
+      "project": "https://pingu.exchange/",
+      "twitter": "https://x.com/PinguExchange/",
+      "github": "https://github.com/PinguProtocol/pingu-exchange-contracts/",
+      "docs": "https://docs.pingu.exchange/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/157965913?v=4"
   },
   {
     "name": "PinotFinance",
@@ -1707,7 +1820,7 @@
       "github": "https://github.com/pinotfinance",
       "docs": "https://docs.pinot.finance"
     },
-    "pfp": "https://pinot.finance/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/241954929?v=4"
   },
   {
     "name": "Poply",
@@ -1726,7 +1839,7 @@
       "github": "https://github.com/0xpoply",
       "docs": "https://docs.poply.xyz/"
     },
-    "pfp": "https://poply.xyz/favicon.ico"
+    "pfp": "https://avatars.githubusercontent.com/u/146130787?v=4"
   },
   {
     "name": "Puffer",
@@ -1745,7 +1858,7 @@
       "github": "https://github.com/PufferFinance",
       "docs": "https://docs.puffer.fi/"
     },
-    "pfp": "https://www.puffer.fi/favicon/apple-touch-icon.png"
+    "pfp": "https://avatars.githubusercontent.com/u/101787367?v=4"
   },
   {
     "name": "Purps",
@@ -1767,7 +1880,7 @@
       "github": "https://github.com/PurpsExchange",
       "docs": "https://purpsexchange.gitbook.io/docs"
     },
-    "pfp": "https://purpsexchange.gitbook.io/docs/~gitbook/image?url=https%3A%2F%2F3205266903-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FHsmL7Oqh5E4lBVBNMgnX%252Fsites%252Fsite_8Dixu%252Ficon%252FMV8kAGPGk0iuTKElg47d%252FMONDA.jpeg%3Falt%3Dmedia%26token%3D1e7e5cca-3bbf-4bf0-be1f-95cce2e0f792&width=48&height=48&sign=377a4e1f&sv=2"
+    "pfp": "https://avatars.githubusercontent.com/u/236845951?v=4"
   },
   {
     "name": "Pyth",
@@ -1785,7 +1898,7 @@
       "github": "https://github.com/pyth-network",
       "docs": "https://docs.pyth.network"
     },
-    "pfp": "https://framerusercontent.com/images/3i2OuCNwSBWriCGmMsfn8O20Bes.png"
+    "pfp": "https://avatars.githubusercontent.com/u/75637738?v=4"
   },
   {
     "name": "Sablier",
@@ -1892,7 +2005,7 @@
       "github": "https://github.com/Skate-Org",
       "docs": "https://docs.skatechain.org"
     },
-    "pfp": "https://docs.skatechain.org/mintlify-assets/_mintlify/favicons/skate-a547ae47/Z2_Lo3P2hnPsjmxp/_generated/favicon/apple-touch-icon.png"
+    "pfp": "https://skatechain.org/favicon.ico?v=2"
   },
   {
     "name": "StakeStone",
@@ -2124,6 +2237,34 @@
       "docs": "https://symphony-3.gitbook.io/symphony-docs"
     },
     "pfp": "https://www.symphony.io/favicon.ico"
+  },
+  {
+    "name": "Talentum",
+    "description": "An interactive SocialFi platform that blends quests, engagement, and digital collectibles. Earn rewards for meaningful activity, discover new ecosystems, and grow your reputation on-chain.",
+    "categories": [
+      "Consumer::Social",
+      "Consumer::Other",
+      "Gaming::Games",
+      "Gaming::Other",
+      "NFT::NFTFi"
+    ],
+    "addresses": {
+      "TalentumDaily": "0x4816287183534B5ced5Ee93f098962d7Db144845",
+      "TalentumMultiSend": "0x5768aF66FcFF11328FDe25398cC61BB201185697",
+      "TalentumBuyProduct": "0xe610baf2D321199be47ba943F2610Bc82bAB774B",
+      "TalentumNativeStaking": "0xf42d150e621b7bE050beb71C0f6E89A63BfaA95F",
+      "TalentumBuyBattlePass": "0xe3885a21005434c53d945c3A717Bcb23B49412E9",
+      "TalentumWithdrawManager": "0x429b401717130d24ED5c92805141442defB6cE1D",
+      "TalentumWheelSpin": "0x05F9DfEf3E95228695BF449d96181b785144b456",
+      "TalentumProof": "0x28849Cc5A79CE2f94958FF8f853140bce865DAfA"
+    },
+    "links": {
+      "project": "https://talentum.id/",
+      "twitter": "https://x.com/TalentumID",
+      "github": "https://github.com/Talentum-id",
+      "docs": "https://docs.talentum.id/"
+    },
+    "pfp": "https://talentum.id/favicon.ico"
   },
   {
     "name": "Timeswap",
@@ -2423,6 +2564,25 @@
       "docs": "https://docs.kansei.finance/"
     },
     "pfp": "https://kansei.finance/favicon.ico"
+  },
+  {
+    "name": "Lagoon",
+    "description": "LAGOON provides open, general-purpose, secure vault infrastructure to build and scale on-chain yield products.",
+    "categories": [
+      "DeFi::Yield",
+      "DeFi::Asset Allocators"
+    ],
+    "addresses": {
+      "ProtocolRegistry": "0xBf994c358f939011595AB4216AC005147863f9D6",
+      "VaultFactory": "0xcCdC4d06cA12A29C47D5d105fED59a6D07E9cf70"
+    },
+    "links": {
+      "project": "https://www.lagoon.finance/",
+      "twitter": "https://x.com/lagoon_finance",
+      "github": "https://github.com/hopperlabsxyz",
+      "docs": "https://docs.lagoon.finance/"
+    },
+    "pfp": "https://framerusercontent.com/images/rMPv2vazVaG6X823gBxmloQDbyo.svg"
   },
   {
     "name": "Mevx",

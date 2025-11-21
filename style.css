@@ -931,7 +931,9 @@ header {
 
 @media (max-width: 1200px) {
   .ai-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 
@@ -954,7 +956,11 @@ header {
   }
 }
 
-
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ← всегда 2 блока */
+  gap: 24px;
+}
 
 .top-nav {
   display: flex;

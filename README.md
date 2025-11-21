@@ -1,69 +1,130 @@
 # Monad Atlas  
 **Discover live experiences on Monad — dApps, infrastructure, AI-powered search.**
 **https://monad-atlas-iota.vercel.app/**
----
-
-## 🔍 What This Project Does  
-**Monad Atlas** is an ecosystem explorer for the Monad blockchain — a discovery layer for dApps, tools, infra, and emerging projects.
-
-It provides two main interfaces:
-
-- **Home Page (index.html):**  
-  A catalog of all dApps with category filters, status filters, and sorting.
-  
-- **AI Search (ai.html):**  
-  A semantic search engine that understands meaning and returns the most relevant *live* dApps based on natural-language queries.
 
 ---
 
-## 🧱 Architecture Overview
+## 🔍 Overview  
+**Monad Atlas** is a discovery layer for the Monad blockchain — a place to explore dApps, infrastructure, DeFi tools, games, and emerging projects in the ecosystem.
 
-### Backend / Python Data Pipeline  
-A single script **`build_all.py`** performs the entire dataset-generation lifecycle:
+The platform provides two core interfaces:
 
-1. **Fetch dApps & Icons**  
-   Pulls protocol definitions from GitHub and automatically resolves the project logo  
-   (favicon or GitHub avatar).
+### 🏠 Home Page (`index.html`)
+A full catalog of all indexed dApps featuring:
+- category filtering  
+- status filtering  
+- alphabetical sorting  
+- quick search  
 
-2. **Website Text Extraction**  
-   Scrapes the official project website for up to ~2000 characters of meaningful text (`site_text`).
-
-3. **Embedding Generation**  
-   Combines:
-   - name  
-   - description  
-   - categories  
-   - scraped website text  
-   
-   And generates a semantic vector embedding using **MiniLM-L6-v2**.
-
-The pipeline outputs two files:
-
-- `all_dapps_main.json` — core dataset (no embeddings)  
-- `all_dapps_embedded.json` — enriched dataset + embeddings  
+### 🤖 AI Search (`ai.html`)
+A powerful semantic search engine that understands natural language queries and returns the most relevant *live* dApps based on meaning — not keywords.
 
 ---
 
-### Frontend (HTML + JavaScript + CSS)
+## 🧱 Architecture
 
-- **index.html** loads `all_dapps_main.json`, displays all dApps, and supports full filtering.  
-- **ai.html** loads `all_dapps_embedded.json` and performs semantic search **directly in the browser**.
+### 🔧 Backend / Data Pipeline (Python)
+A unified script **`build_all.py`** performs the entire dataset generation flow:
 
-#### AI Search Workflow:
-- Generate an embedding for the user query (MiniLM running locally via WebGPU/WebAssembly).
-- Compare it with precomputed dApp embeddings using **cosine similarity**.
-- Sort by highest relevance.
-- **Return only dApps where `live === true`.**
-- Display the top 12 most relevant results.
+#### 1. Fetch GitHub Protocol Definitions + Icons  
+- Loads dApp definitions from the official `monad-crypto/protocols` repository  
+- Detects project logos using:
+  - GitHub avatars
+  - website favicons  
 
-The AI search grid shows **2 cards per row** on desktop and **1 card per row** on mobile.
+#### 2. Scrape Website Text  
+Extracts meaningful text (up to ~2000 characters) from each project's official website and stores it in:
+```
+site_text
+```
+
+#### 3. Generate Embeddings  
+Combines `name + description + categories + site_text` and produces a semantic vector embedding using:
+
+- **SentenceTransformer MiniLM-L6-v2**
+
+#### Output Files
+The pipeline produces two JSON datasets:
+
+- **`all_dapps_main.json`** — core dataset used by `index.html`  
+- **`all_dapps_embedded.json`** — includes full data + `embedding` vectors for AI search  
 
 ---
 
-## 🧠 How AI Search Works (Detailed)
+## 🎨 Frontend (HTML + JS + CSS)
 
-1. Load `all_dapps_embedded.json`.
-2. Build an array of `{ dapp, embeddingVector }`.
-3. When the user enters a prompt, create a MiniLM embedding for that prompt.
-4. Compute cosine similarity between:
+### 🏠 index.html  
+Loads `all_dapps_main.json` and renders:
+- dApp cards  
+- categories  
+- filters  
+- statuses  
+- sorting options  
 
+### 🤖 ai.html  
+Loads `all_dapps_embedded.json` and performs AI semantic search **directly in the browser** using the `@xenova/transformers` WebGPU/WASM backend.
+
+### 📌 Features
+
+#### AI Search Flow
+1. Load precomputed embeddings for all dApps  
+2. Convert user query → MiniLM embedding  
+3. Compare it with precomputed dApp embeddings using **cosine similarity**  
+4. Filter out all `live === false`  
+5. Sort by relevance  
+6. Display top-12 dApps  
+
+#### Render  
+- Desktop → **2 cards per row**  
+- Mobile → **1 card per row**  
+
+---
+
+## 🧠 How AI Search Works (Under the Hood)
+
+1. The frontend loads `all_dapps_embedded.json`  
+2. Model MiniLM is loaded via `@xenova/transformers`  
+3. The user query is embedded  
+4. Cosine similarity is computed with every dApp vector  
+5. Only live dApps are included in final results  
+6. Results are ranked and rendered
+
+This engine runs:
+- fully client-side  
+- without an API server  
+- without rate limits  
+- extremely fast, thanks to WebGPU acceleration  
+
+---
+
+## 🛠 Catalog Filtering (index.html)
+
+Supports:
+
+- **Search:** name + description  
+- **Categories:** primary + optional secondary  
+- **Status:**  
+  - All  
+  - Live  
+  - Not Live  
+- **Sorting:**  
+  - A → Z  
+  - Z → A  
+  - Live First  
+
+Each card includes:
+- logo  
+- name  
+- description  
+- categories  
+- live status  
+- link to full profile  
+
+---
+
+## 👥 Authors
+
+- **Makssay** — https://x.com/Makssay_eth  
+- **AlexRocker** — https://x.com/AlexRocker0330  
+
+---

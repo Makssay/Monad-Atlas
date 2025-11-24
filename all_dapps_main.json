@@ -53,6 +53,26 @@
     "pfp": "https://accountable.capital/favicon-light.ico"
   },
   {
+    "name": "Across",
+    "description": "Cross-chain liquidity protocol that allows users to swap tokens between different chains.",
+    "live": true,
+    "categories": [
+      "Infra::Interoperability"
+    ],
+    "addresses": {
+      "Helios": "0x09aea4b2242abc8bb4bb78d537a67a245a7bec64",
+      "MulticallHandler": "0xeC41F75c686e376Ab2a4F18bde263ab5822c4511",
+      "SpokePool": "0xd2ecb3afe598b746F8123CaE365a598DA831A449"
+    },
+    "links": {
+      "project": "https://across.to",
+      "twitter": "https://x.com/AcrossProtocol",
+      "github": "https://github.com/across-protocol",
+      "docs": "https://docs.across.to"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/93779808?v=4"
+  },
+  {
     "name": "AethonSwap",
     "description": "AethonSwap is a next-generation decentralized exchange (DEX) designed to be the central liquidity hub of Monad.",
     "live": true,
@@ -233,6 +253,34 @@
     "pfp": "https://avatars.githubusercontent.com/u/162892960?v=4"
   },
   {
+    "name": "bonad.fun",
+    "description": "Create, trade, and build your vision",
+    "live": true,
+    "categories": [
+      "DeFi::Launchpads",
+      "DeFi::Memecoin"
+    ],
+    "addresses": {
+      "Airlock": "0x660eAaEdEBc968f8f3694354FA8EC0b4c5Ba8D12",
+      "Bundler": "0xC99b485499f78995C6F1640dbB1413c57f8BA684",
+      "GovernanceFactory": "0xFAafdE6a5b658684cC5eb0C5c2c755B00A246F45",
+      "NoOpGovernanceFactory": "0xb4deE32EB70A5E55f3D2d861F49Fb3D79f7a14d9",
+      "NoOpMigrator": "0x5F3bA43D44375286296Cb85F1EA2EBfa25dde731",
+      "PoolManager": "0x188d586ddcf52439676ca21a244753fa19f9ea8e",
+      "TokenFactory": "0xaA47D2977d622DBdFD33eeF6a8276727c52EB4e5",
+      "UniversalRouter": "0x0d97dc33264bfc1c226207428a79b26757fb9dc3",
+      "V2Migrator": "0x136191B46478cAB023cbC01a36160C4Aad81677a",
+      "V3Quoter": "0x66266174564170519409d8853898f065c719536b",
+      "V4ScheduledMulticurveInitializer": "0xCe3099B2F07029b086E5e92a1573C5f5A3071783"
+    },
+    "links": {
+      "project": "https://bonad.fun",
+      "twitter": "https://x.com/bonadfun",
+      "docs": "https://bonad.fun/docs"
+    },
+    "pfp": null
+  },
+  {
     "name": "Bro Fun",
     "description": "Where fortune favors the bros. Sink cups, become a legend.",
     "live": true,
@@ -277,6 +325,31 @@
     },
     "links": {},
     "pfp": null
+  },
+  {
+    "name": "Capricorn",
+    "description": "The premier liquidity venue on Monad.",
+    "live": true,
+    "categories": [
+      "DeFi::DEX"
+    ],
+    "addresses": {
+      "CapricornCLFactory": "0x6B5F564339DbAD6b780249827f2198a841FEB7F3",
+      "NonfungibleTokenPositionDescriptor": "0xEd2850D3704a1a5BcB6158f27deDA3d6FF4C31D9",
+      "NonfungibleTokenPositionManager": "0x4C02af995BB1f574c9bf31F43ddc112414aE0Ac7",
+      "QuoterV2": "0xB430EDD2b54cdB3B25703fb3342ca3a88663A04D",
+      "SwapRouter": "0xdac97b6a3951641B177283028A8f428332333071"
+    },
+    "initCodeHashes": {
+      "clmmInitCodeHash": "0x32103411033f4f192bc82f2336cf034c3faf574dfaa3539190239fc1f27ab9fa"
+    },
+    "links": {
+      "project": "https://capricorn.exchange/",
+      "twitter": "https://x.com/CapricornDEX/",
+      "docs": "https://capricorn-protocol.notion.site/Capricorn-DEX-Aggregator-Integration-Guide-28c945bc2f3a80b496e6c755f9ca7452",
+      "github": "https://github.com/capricorn-protocol/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/226638592?v=4"
   },
   {
     "name": "Cashmere",
@@ -753,6 +826,35 @@
     "pfp": "https://dex.dirol.io/favicon.ico"
   },
   {
+    "name": "Doppler",
+    "description": "Create custom capital markets with efficient price discovery and maximum flexibility. ",
+    "live": true,
+    "categories": [
+      "DeFi::Launchpads",
+      "DeFi::Asset Issuers"
+    ],
+    "addresses": {
+      "Airlock": "0x660eaaedebc968f8f3694354fa8ec0b4c5ba8d12",
+      "Bundler": "0xc99b485499f78995c6f1640dbb1413c57f8ba684",
+      "GovernanceFactory": "0xfaafde6a5b658684cc5eb0c5c2c755b00a246f45",
+      "LaunchpadGovernanceFactory": "0x5fbe931dc4b923a7abe4c47ad68d5bf9eda5b76d",
+      "LockableUniswapV3Initializer": "0x8b4c7db9121fc885689c0a50d5a1429f15aec2a0",
+      "NoOpGovernanceFactory": "0xb4dee32eb70a5e55f3d2d861f49fb3d79f7a14d9",
+      "NoOpMigrator": "0x5f3ba43d44375286296cb85f1ea2ebfa25dde731",
+      "TokenFactory": "0xaa47d2977d622dbdfd33eef6a8276727c52eb4e5",
+      "UniswapV2Migrator": "0x136191b46478cab023cbc01a36160c4aad81677a",
+      "UniswapV4ScheduledMulticurveInitializer": "0xce3099b2f07029b086e5e92a1573c5f5a3071783",
+      "UniswapV4ScheduledMulticurveInitializerHook": "0x580ca49389d83b019d07e17e99454f2f218e2dc0"
+    },
+    "links": {
+      "project": "https://www.doppler.lol/",
+      "twitter": "https://x.com/dopplerprotocol",
+      "github": "https://github.com/whetstoneresearch/doppler",
+      "docs": "https://docs.doppler.lol/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/172843583?v=4"
+  },
+  {
     "name": "Eisen",
     "description": "A multichain DEX & CEX aggregator—streamline every swap.",
     "live": true,
@@ -800,7 +902,7 @@
       "DeFi::MEV"
     ],
     "addresses": {
-      "ShMonad": "0x1ce060D47A0Fd08B0869748FD7eccF151F4eC5d1",
+      "ShMonad": "0x1B68626dCa36c7fE922fD2d55E4f631d962dE19c",
       "Atlas": "0x2DA28fedc4643c787CB5c5e84fa6AaDb596875E8"
     },
     "links": {
@@ -812,6 +914,26 @@
     "pfp": "https://avatars.githubusercontent.com/u/102441203?v=4"
   },
   {
+    "name": "Fibrous",
+    "description": "One place for best execution across chains.",
+    "live": true,
+    "categories": [
+      "DeFi::DEX",
+      "DeFi::DEX Aggregator",
+      "DeFi::Trading Interfaces"
+    ],
+    "addresses": {
+      "FibrousSettler": "0x274602a953847d807231d2370072F5f4E4594B44"
+    },
+    "links": {
+      "project": "https://fibrous.finance",
+      "twitter": "https://x.com/FibrousFinance",
+      "github": "https://github.com/Fibrous-Finance",
+      "docs": "https://docs.fibrous.finance"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/113241094?v=4"
+  },
+  {
     "name": "Flap",
     "description": "The premier memecoin launchpad for trench warriors on Monad.",
     "live": true,
@@ -821,16 +943,37 @@
     "addresses": {
       "Portal": "0x30e8ee7b5881bf2E158A0514f2150aabe2c68b23",
       "TokenV2Implementation": "0xB88189aA1162850D75A1c1e16F837b7979994184",
-      "TaxTokenImplementation": "0x8E6512bA94C723D8F140B0FD9DBb498854b7a1F4",
+      "TaxTokenImplementation": "0x1C8847736521f5cD725dFB8f33c7c610826e7C42",
       "TaxTokenSplitterImplementation": "0x57Fed6832F12150a77D5952b49190d9447aCB5ee"
     },
     "links": {
-      "project": "https://monad.flap.sh/",
+      "project": "https://flap.sh/monad",
       "twitter": "https://x.com/flapdotsh",
       "docs": "https://docs.flap.sh/flap/",
       "developer": "https://docs.flap.sh/flap/developers/quick-start"
     },
-    "pfp": "https://monad.flap.sh/favicon.ico"
+    "pfp": "https://flap.sh/favicon.ico"
+  },
+  {
+    "name": "Fluffle",
+    "description": "Fluffle is the first hyper-gamified productivity platform that makes focus addictive. ",
+    "live": true,
+    "categories": [
+      "Consumer::Social",
+      "NFT::Other",
+      "Gaming::Mobile-First"
+    ],
+    "addresses": {
+      "FluffleSolveil": "0x8255DACD8A45f4aBE6dc821E6f7F3c92a8E22fBB",
+      "FluffleDragons": "0x2eD99dbE114249B7611478d67818B399865FFc89",
+      "FluffleFurniture": "0x67f58f1faf78781b7eb90c457846e0f965bb1a2f"
+    },
+    "links": {
+      "project": "https://fluffle.world/",
+      "twitter": "https://x.com/fluffleworld",
+      "docs": ""
+    },
+    "pfp": "https://fluffle.world/favicon.ico"
   },
   {
     "name": "Garden",
@@ -1271,6 +1414,41 @@
     "pfp": "https://avatars.githubusercontent.com/u/192854206?v=4"
   },
   {
+    "name": "Mace",
+    "description": "The smartest DEX aggregator on Monad",
+    "categories": [
+      "DeFi::DEX Aggregator",
+      "DeFi::Trading Interfaces"
+    ],
+    "addresses": {
+      "MaceRouter": "0x6F05a0746a8CB5c7DE5aF1568C8d020DBB521B23",
+      "CrystalAdapter": "0x70ca11a8bb062EF86e6E662b58aE3cAEeF1d66e5",
+      "IzumiAdapter": "0x60672942Dd9BEAf2D4980892A1B8001B5178149f",
+      "ShMonAdapter": "0x35b1341a7592e17940865CF69B40f37E05978F45",
+      "LFJAdapter": "0x73590e38F40F799eDb3AfE3142c0Ea891F393D9D",
+      "APRMonAdapter": "0x0E89C6d18933E2dA3a5C56B0727113B2247AC847",
+      "KuruAdapter": "0x59966aDd989Bb2b8A528B796a81FB7e593072529",
+      "KintsuAdapter": "0xb346fbd2Ba963a1C3B00946c733e9f0d5CE7AEeC",
+      "UniswapV4Adapter": "0xaA318069cEe0E16E25B8aA34C27Ac20C4DE16fC2",
+      "SomethingAdapter": "0x39C361d267853A43f4e6237291CeA0701C426aBe",
+      "PrintrCurveAdapter": "0x7D120C4FCcBd620b398E04f9147271cF5cAC587C",
+      "PancakeswapV3Adapter": "0xA24bE4225DdA623E4Db49Ed12c80AaE583447482",
+      "ClobberV2Adapter": "0x42A3ED3010D38daB622b9e135df724AB4a813cd7",
+      "AlgebraAdapter": "0xC1d16c871d816Cb2400243dC7A61ed4E9137FbEb",
+      "WethAdapter": "0xC6B6b9E8eB8b3cf2Cecd8Ff536A9E1599D8Ab426",
+      "UniswapV2Adapter": "0x9D282092C60303BA8Fc219501CfEdAFAFa290A64",
+      "NitroAdapter": "0x5C968a45404e55Ffa5DA393fe7db96f244792707",
+      "NadFunCurveAdapter": "0x057F554fe1558D2910e5e0865d9177E8EBB60197"
+    },
+    "links": {
+      "project": "https://www.mace.ag/",
+      "twitter": "https://x.com/mace_ag",
+      "github": "https://github.com/mace-ag/",
+      "docs": "https://docs.mace.ag/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/182255364?v=4"
+  },
+  {
     "name": "Madhouse",
     "description": "Experience lightning-fast 10,000 tps on Monad with Madhouse aggregator. Trade with speed, high liquidity, and madness.",
     "live": true,
@@ -1287,6 +1465,26 @@
       "docs": "https://docs.madhouse.ag/"
     },
     "pfp": "https://avatars.githubusercontent.com/u/218230279?v=4"
+  },
+  {
+    "name": "Magma",
+    "description": "Native liquid staking and MEV, powered by the fastest block engine in crypto.",
+    "live": true,
+    "categories": [
+      "DeFi::Liquid Staking",
+      "DeFi::Staking",
+      "DeFi::MEV"
+    ],
+    "addresses": {
+      "gMON": "0x8498312A6B3CbD158bf0c93AbdCF29E6e4F55081"
+    },
+    "links": {
+      "project": "https://www.magmastaking.xyz/",
+      "twitter": "https://x.com/MagmaStaking",
+      "github": "https://github.com/MagmaStaking",
+      "docs": "https://docs.hydrogenlabs.xyz/magma"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/211500435?v=4"
   },
   {
     "name": "Matcha",
@@ -1339,6 +1537,49 @@
       "docs": "https://0x-docs.gitbook.io/matcha-meta/"
     },
     "pfp": "https://avatars.githubusercontent.com/u/24832717?v=4"
+  },
+  {
+    "name": "Mayan",
+    "description": "Mayan is a lightning-fast, intent-based cross-chain swap protocol that makes transfers seamless, instant, and cost-effective. Move any asset directly into Monad through our simple swap interface or integrate Mayan’s SDK and widget for seamless cross-chain liquidity.",
+    "live": true,
+    "categories": [
+      "DeFi::Cross Chain",
+      "DeFi::DEX",
+      "DeFi::Intents",
+      "DeFi::Memecoin",
+      "DeFi::Stableswap",
+      "DeFi::Trading Interfaces"
+    ],
+    "addresses": {
+      "MayanForwarder": "0x337685fdaB40D39bd02028545a4FfA7D287cC3E2",
+      "MayanFastMctp": "0xC1062b7C5Dc8E4b1Df9F200fe360cDc0eD6e7741",
+      "MayanFastMctpFeeManager": "0x598400bA0d8BA9C3b57ad424A68183f1D17c7e56"
+    },
+    "links": {
+      "project": "https://mayan.finance/",
+      "twitter": "https://x.com/MayanFinance",
+      "github": "https://github.com/mayan-finance",
+      "docs": "https://docs.mayan.finance/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/97893623?v=4"
+  },
+  {
+    "name": "Mintto.xyz",
+    "description": "Create engaging NFT raffles with customizable prizes, evolving artwork, and transparent on-chain draws that transform the collector experience.",
+    "live": true,
+    "categories": [
+      "NFT::Other"
+    ],
+    "addresses": {
+      "Factory": "0x00000000001594C61dD8a6804da9AB58eD2483ce"
+    },
+    "links": {
+      "project": "https://mintto.xyz/",
+      "twitter": "https://x.com/mintto_xyz",
+      "github": "",
+      "docs": ""
+    },
+    "pfp": "https://mintto.xyz/favicon.ico"
   },
   {
     "name": "Mona Trading Bot",
@@ -1443,6 +1684,24 @@
       "telegram": "https://t.me/MuDigitalHQ/6"
     },
     "pfp": "https://avatars.githubusercontent.com/u/179521270?v=4"
+  },
+  {
+    "name": "NFTs2Me",
+    "description": "NFTs2Me is a user-friendly comprehensive platform to create, deploy and manage your NFT collection on Monad, 100% free.",
+    "live": true,
+    "categories": [
+      "NFT::Marketplace"
+    ],
+    "addresses": {
+      "Factory": "0x00000000001594C61dD8a6804da9AB58eD2483ce"
+    },
+    "links": {
+      "project": "https://nfts2me.com/",
+      "twitter": "https://x.com/NFTs2Me",
+      "github": "https://github.com/nfts2me",
+      "docs": "https://docs.nfts2me.com/"
+    },
+    "pfp": "https://avatars.githubusercontent.com/u/109629895?v=4"
   },
   {
     "name": "Nad.fun",
@@ -1737,7 +1996,7 @@
       "github": "https://github.com/pingme",
       "docs": "https://www.pingme.xyz"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/3476660?v=4"
+    "pfp": "https://www.pingme.xyz/favicon.ico"
   },
   {
     "name": "Pingu Exchange",
@@ -1781,7 +2040,7 @@
       "github": "https://github.com/PinguProtocol/pingu-exchange-contracts/",
       "docs": "https://docs.pingu.exchange/"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/157965913?v=4"
+    "pfp": "https://pingu.exchange./favicon/favicon-32x32.png?version=2"
   },
   {
     "name": "PinotFinance",
@@ -1820,7 +2079,7 @@
       "github": "https://github.com/pinotfinance",
       "docs": "https://docs.pinot.finance"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/241954929?v=4"
+    "pfp": "https://pinot.finance/favicon.ico"
   },
   {
     "name": "Poply",
@@ -1839,7 +2098,7 @@
       "github": "https://github.com/0xpoply",
       "docs": "https://docs.poply.xyz/"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/146130787?v=4"
+    "pfp": "https://poply.xyz/favicon.ico"
   },
   {
     "name": "Puffer",
@@ -1858,7 +2117,7 @@
       "github": "https://github.com/PufferFinance",
       "docs": "https://docs.puffer.fi/"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/101787367?v=4"
+    "pfp": "https://www.puffer.fi/favicon/apple-touch-icon.png"
   },
   {
     "name": "Purps",
@@ -1880,7 +2139,7 @@
       "github": "https://github.com/PurpsExchange",
       "docs": "https://purpsexchange.gitbook.io/docs"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/236845951?v=4"
+    "pfp": null
   },
   {
     "name": "Pyth",
@@ -1898,7 +2157,27 @@
       "github": "https://github.com/pyth-network",
       "docs": "https://docs.pyth.network"
     },
-    "pfp": "https://avatars.githubusercontent.com/u/75637738?v=4"
+    "pfp": "https://framerusercontent.com/images/3i2OuCNwSBWriCGmMsfn8O20Bes.png"
+  },
+  {
+    "name": "Rango",
+    "description": "Rango offers smart routing over DEXs, DEX aggregators, bridges and cross-chain protocols to provides cross-chain swaps, interoperability and message passing",
+    "live": true,
+    "categories": [
+      "Infra::Interoperability",
+      "DeFi::DEX Aggregator",
+      "DeFi::Cross Chain"
+    ],
+    "addresses": {
+      "RangoDiamond": "0x69460570c93f9DE5E2edbC3052bf10125f0Ca22d"
+    },
+    "links": {
+      "project": "https://rango.exchange/",
+      "twitter": "https://x.com/RangoExchange",
+      "github": "https://github.com/rango-exchange",
+      "docs": "https://docs.rango.exchange/"
+    },
+    "pfp": "https://rango.exchange/favicon.ico"
   },
   {
     "name": "Sablier",
@@ -1980,6 +2259,72 @@
       "deployment_pr_v1_4_1": "https://github.com/safe-global/safe-deployments/pull/1160"
     },
     "pfp": "https://safe.global/favicon.ico"
+  },
+  {
+    "name": "SatLayer",
+    "description": "The new financial system, built on Bitcoin: SatLayer is the economic layer for Bitcoin, making the best asset now fully programmable.",
+    "live": true,
+    "categories": [
+      "DeFi::Staking",
+      "DeFi::Liquid Staking"
+    ],
+    "addresses": {
+      "SatLayerPool": "0x6CaEAFfC53B91094542B6cB9C51f448DB74dfd8C"
+    },
+    "links": {
+      "project": "https://www.satlayer.xyz/",
+      "twitter": "https://x.com/SatLayer",
+      "github": "https://github.com/SatLayer",
+      "docs": "https://docs.satlayer.xyz/"
+    },
+    "pfp": "https://framerusercontent.com/images/GRg0LxAg8vgFdo4bp2SUX7KH0U.png"
+  },
+  {
+    "name": "Sela Network",
+    "description": "Sela Network is a DePIN infrastructure that connects distributed nodes using daily devices, unlocking AI's potential through real-life data accessibility",
+    "categories": [
+      "AI::Data",
+      "AI::Infrastructure",
+      "DePIN::Data Collection",
+      "DePIN::Compute"
+    ],
+    "addresses": {
+      "SelaPower": "0x42eA86B7E84ea022aa902C6dC470758BA68A7506"
+    },
+    "links": {
+      "project": "https://www.selanetwork.io/",
+      "twitter": "https://x.com/selaNetwork",
+      "github": "https://github.com/sela-network",
+      "docs": "https://docs.selanetwork.io/"
+    },
+    "pfp": "https://www.selanetwork.io/favicon/favicon-16x16.png"
+  },
+  {
+    "name": "Sherpa",
+    "description": "A suite of user-facing defi applications for automating strategic trading and yield capture methodologies.  Monad focused - multichain enabled.",
+    "live": true,
+    "categories": [
+      "DeFi::Yield",
+      "DeFi::Trading Interfaces"
+    ],
+    "addresses": {
+      "SherpaVault": "0x96043804D00DCeC238718EEDaD9ac10719778380",
+      "SherpaUSD": "0x58fC8a79055519af779308a60A7f1315cAA266Af",
+      "CCIPPool": "0xF9BC71BEDEB6ba90de4cf79f09870d99B0ba2bF0",
+      "ConfigManager": "0xFA82B15CcA7668f011171a026895dde0DefCc46b",
+      "SherpaRouter": "0xF37dD3ACbCB7B3BE161F8F67d09273D5Bc09Bd85",
+      "TradingStrategyModule": "0x35708afD736873c92134adDBD2c76689993Ab9C4",
+      "SingleSigActionModule": "0x352c308f0CB6f6B9443CBf38b89e62ca7808A61A"
+    },
+    "links": {
+      "project": "https://sherpa.trade",
+      "sherpaearn": "https://earn.sherpa.trade",
+      "trading": "https://app.sherpa.trade",
+      "twitter": "https://x.com/sherpa_trade",
+      "github": "https://github.com/hedgemonyxyz/sherpa-vault-smartcontracts-v1.0",
+      "docs": "https://docs.sherpa.trade"
+    },
+    "pfp": "https://sherpa.trade/favicon.ico"
   },
   {
     "name": "Skate AMM",
@@ -2451,6 +2796,26 @@
     "pfp": "https://cdn.prod.website-files.com/67c6957f9022cda8180a2dff/6855002580d65097192392c4_Yapfav.png"
   },
   {
+    "name": "aPriori",
+    "description": "The intelligent order flow coordination layer for high performance blockchains",
+    "categories": [
+      "DeFi::Liquid Staking",
+      "DeFi::MEV",
+      "DeFi::DEX Aggregator"
+    ],
+    "addresses": {
+      "aprMON": "0x0c65A0BC65a5D819235B71F554D210D3F80E0852",
+      "ValidatorsRegistry": "0x77F6e4103e32D6146e29cF9eD1645e170F90BC2b"
+    },
+    "links": {
+      "project": "https://www.apr.io/",
+      "twitter": "https://x.com/aPriori",
+      "github": "https://github.com/apriori-network",
+      "docs": "https://apriori-docs.gitbook.io/apriori-docs/"
+    },
+    "pfp": "https://www.apr.io/favicon.ico"
+  },
+  {
     "name": "earnAUSD",
     "description": "The primary liquid yield token on Monad, systematically allocating AUSD across top DeFi opportunities",
     "live": true,
@@ -2604,6 +2969,58 @@
       "docs": "https://docs.mevx.io/"
     },
     "pfp": "https://mevx.io/favicon.ico"
+  },
+  {
+    "name": "Morpho",
+    "description": "The universal lending network",
+    "live": true,
+    "categories": [
+      "DeFi::Lending"
+    ],
+    "addresses": {
+      "Deployer1Deployer": "0xA16B49505e39C373A8f9e1b1540514BA64B3942a",
+      "Morpho": "0xD5D960E8C380B724a48AC59E2DfF1b2CB4a1eAee",
+      "AdaptiveCurveIrm": "0x09475a3D6eA8c314c592b1a3799bDE044E2F400F",
+      "Safe": "0xe27f43624FDb5325b853c4711BCF0fEBA754e558",
+      "PublicAllocator": "0xfd70575B732F9482F4197FE1075492e114E97302",
+      "Deployer1": "0x6C3A89e814A9D150cD763f443dceE5EBC5bF60b6",
+      "Deployer2Deployer": "0x907a393Ad715Ac63389EEc3236FaC74E7D68a4ee",
+      "MetaMorphoV1_1Factory": "0x33f20973275B2F574488b18929cd7DCBf1AbF275",
+      "MorphoChainlinkOracleV2Factory": "0xC8659Bcd5279DB664Be973aEFd752a5326653739",
+      "Deployer2": "0x0a3c9f732C7E987ddbBaac13309A8B552aa50872",
+      "Deployer3Deployer": "0x6F12916F559dC7f86a86cD3e33BFebE6348f979A",
+      "UrdFactory": "0xE8233125be3ecD274b8007618315Dd2f3361eced",
+      "MetaMorphoV1_1": "0x6D0090dB99919d1594B9b824D295E923266C9052",
+      "MorphoChainlinkOracleV2": "0x6A99Cc46825A724B41f8E5656935929FA0a2cB2C",
+      "UniversalRewardsDistributor": "0xA3E73eC1792bb127B0915dE9842eB999C12C0c34",
+      "Deployer3": "0xFf08983fAA3D689c8C8527Bd69f90Ea46d170db9",
+      "Deployer4Deployer": "0x03877DB7cAa28bC522DbB8c060eeAEB086020B83",
+      "PreLiquidationFactory": "0xB5b3e541abD19799E0c65905a5a42BD37d6c94c0",
+      "Bundler3": "0x82b684483e844422FD339df0b67b3B111F02c66E",
+      "GeneralAdapter1": "0x725AB8CAd931BCb80Fdbf10955a806765cCe00e5",
+      "PreLiquidation": "0x273dBC3f178D03fA9D385e61Ee1E11dCf563EE14",
+      "Deployer4": "0xF4c840eA6fdD0493F77Ef0141C5a5a09Cd384918",
+      "Deployer6Deployer": "0x22C3024C7E1e149d7E49766cd047a2da081E4EAF",
+      "VaultV2Factory": "0x8B2F922162FBb60A6a072cC784A2E4168fB0bb0c",
+      "MorphoMarketV1AdapterFactory": "0x8Da54fbF89B3D6fC6DCC92F31CF75a211ACF3d46",
+      "MorphoVaultV1AdapterFactory": "0x9f3c0999425656fD189C69a8aD68cB64986D644A",
+      "VaultV2": "0xc1108C5d98DC09BE44e656A9E34B04D37b90a50d",
+      "MorphoMarketV1Adapter": "0xD155AF55cF966886cc197F05399bE4a033af7090",
+      "MorphoVaultV1Adapter": "0x549bf7A3346eBEbe88BD3FcaD8Ab1f23De8Eb4e4",
+      "Deployer6": "0xa1a2ca8feB4d08a7123BFBB0A269501F885264DE",
+      "Deployer7Deployer": "0x71dd91258eca11fC045098774Ec2F331126A0b53",
+      "RegistryList": "0x6a42f8b46224baA4DbBBc2F860F4675eeA7bd52B",
+      "MorphoMarketV1Registry": "0xF5e6DD4b06874f55444936cF0026b785383A9849",
+      "MorphoVaultV1_1Registry": "0x1d721eddac84e1B9995Fc25ce3e57463688064a9",
+      "Deployer7": "0x3f12264881a118C2A74Ad10F9039694579bdCf54"
+    },
+    "links": {
+      "project": "https://morpho.org/",
+      "twitter": "https://x.com/Morpho",
+      "github": "https://github.com/morpho-org",
+      "docs": "https://docs.morpho.org/"
+    },
+    "pfp": "https://morpho.org/favicon.ico"
   },
   {
     "name": "TeleMafia",
